@@ -71,6 +71,9 @@ from io import StringIO
 from multiprocessing import Queue, Process, Value, cpu_count
 from timeit import default_timer
 
+logging.basicConfig(format='%(asctime)s - %(levelname)s - %(name)s -   %(message)s',
+                    datefmt='%m/%d/%Y %H:%M:%S',
+                    level=logging.INFO)
 
 PY2 = sys.version_info[0] == 2
 # Python 2.7 compatibiity
